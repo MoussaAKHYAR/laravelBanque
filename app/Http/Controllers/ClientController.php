@@ -10,6 +10,11 @@ class ClientController extends Controller
     {
         return view('client.add');
     }
+    public function persist(Request $request)
+    {
+        echo $request->nom;
+       // return $this->add();
+    }
     public function getAll()
     {
         return view('client.list');

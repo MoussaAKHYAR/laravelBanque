@@ -27,6 +27,8 @@ Route::get('/client/edit/{id}', 'ClientController@edit')->name('editclient');
 Route::post('/client/update', 'ClientController@update')->name('updateclient');
 Route::get('/client/delete{id}', 'ClientController@delete')->name('deleteclient');
 Route::get('/client/getAll', 'ClientController@getAll')->name('getallclient');
+Route::post('/client/persist', 'ClientController@persist')->name('persistclient');
+
 
 Route::get('/entreprise/add', 'EntrepriseController@add')->name('addentreprise');
 Route::get('/entreprise/edit/{id}', 'EntrepriseController@edit')->name('editentreprise');
