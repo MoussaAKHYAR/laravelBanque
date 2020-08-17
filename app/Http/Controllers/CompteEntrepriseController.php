@@ -8,15 +8,15 @@ class CompteEntrepriseController extends Controller
 {
     public function add()
     {
-        return view('client.add');
+        return view('compteentreprise.add');
     }
     public function getAll()
     {
-        return view('client.list');
+        return view('compteentreprise.list');
     }
     public function get($id)
     {
-        return view('client.edit');
+        return view('compteentreprise.edit');
     }
     public function update()
     {

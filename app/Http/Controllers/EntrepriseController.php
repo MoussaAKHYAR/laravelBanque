@@ -8,15 +8,15 @@ class EntrepriseController extends Controller
 {
     public function add()
     {
-        return view('client.add');
+        return view('entreprise.add');
     }
     public function getAll()
     {
-        return view('client.list');
+        return view('entreprise.list');
     }
     public function get($id)
     {
-        return view('client.edit');
+        return view('entreprise.edit');
     }
     public function update()
     {

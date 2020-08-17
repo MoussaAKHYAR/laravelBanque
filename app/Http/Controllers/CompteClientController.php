@@ -8,15 +8,15 @@ class CompteClientController extends Controller
 {
     public function add()
     {
-        return view('client.add');
+        return view('compte.add');
     }
     public function getAll()
     {
-        return view('client.list');
+        return view('compte.list');
     }
     public function get($id)
     {
-        return view('client.edit');
+        return view('compte.edit');
     }
     public function update()
     {
