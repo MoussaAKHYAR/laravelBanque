@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class CompteEntrepriseController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function add()
     {
         return view('compteentreprise.add');

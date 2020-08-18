@@ -5,8 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h2>Formulaires d'enregistrements des clients physiques</h2></div>
+                <div class="card-header bg-primary"><h2>Formulaires d'enregistrements des clients physiques</h2></div>
                 <div class="card-body">
+                    @if (isset($confirmation))
+                        @if ($confirmation == 1)
+                            <div class="alert alert-success">Client ajouté</div>
+                        @else
+                            <div class="alert alert-danger">Client non ajouté</div>
+                        @endif
+                    @endif
                     <form method="post" action="{{ route('persistclient') }}">
                         @csrf
                         <div class="form-group">
