@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-12" >
             <div class="card ">
-                <div class="card-header text-center bg-primary"><h2>Liste des clients physiques</h2></div>
+                <div class="card-header text-center bg-primary"><h5>Liste des clients physiques</h5></div>
                 <div class="card-body">
                     <table class="table table-bordered table-hover table-responsive">
                         <tr class="table-active">

@@ -43,9 +43,12 @@ Route::get('/compteclient/edit/{id}', 'CompteClientController@edit')->name('edit
 Route::post('/compteclient/update', 'CompteClientController@update')->name('updatecompteclient');
 Route::get('/compteclient/delete{id}', 'CompteClientController@delete')->name('deletecompteclient');
 Route::get('/compteclient/getAll', 'CompteClientController@getAll')->name('getallcompteclient');
+Route::post('/compteclient/persist', 'CompteClientController@persist')->name('persistcompteclient');
 
 Route::get('/compteentreprise/add', 'CompteEntrepriseController@add')->name('addcompteentreprise');
 Route::get('/compteentreprise/edit/{id}', 'CompteEntrepriseController@edit')->name('editcompteentreprise');
 Route::post('/compteentreprise/update', 'CompteEntrepriseController@update')->name('updatecompteentreprise');
 Route::get('/compteentreprise/delete{id}', 'CompteEntrepriseController@delete')->name('deletecompteentreprise');
 Route::get('/compteentreprise/getAll', 'CompteEntrepriseController@getAll')->name('getallcompteentreprise');
+Route::post('/entreprise/persist', 'EntrepriseController@persist')->name('persistentreprise');
+

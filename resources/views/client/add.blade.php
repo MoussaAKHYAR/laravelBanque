@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header bg-primary"><h2>Formulaires d'enregistrements des clients physiques</h2></div>
+                <div class="card-header bg-primary"><h5>Formulaires d'enregistrements des clients physiques</h5></div>
                 <div class="card-body">
                     @if (isset($confirmation))
                         @if ($confirmation == 1)
