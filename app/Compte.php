@@ -23,7 +23,7 @@ class Compte extends Model
                                 'date_debut'=>'required|min:5',
                                 'date_fin'=>'required|min:5');
 
-    public function compte()
+    public function client()
     {
         return $this->belongsTo('App\Client');
     }

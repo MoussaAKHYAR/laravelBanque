@@ -23,7 +23,7 @@ class CompteEntreprise extends Model
                                 'date_debut'=>'required|min:5',
                                 'date_fin'=>'required|min:5');
 
-    public function compte()
+    public function entreprise()
     {
         return $this->belongsTo('App\Entreprise');
     }
